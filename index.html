@@ -10,6 +10,7 @@
 </head>
 <body>
     <h1>CoffeeRun, should be cereal.</h1>
+    <div data-notification></div>
 
 
     <form 
@@ -23,7 +24,7 @@
         <label>
             Coffee:
             <!-- placeholder shows user example input -->
-            <input type="text" name="coffee" placeholder="Gucci flipflop">
+            <input type="text" name="coffee" placeholder="kinda gud">
         </label>
         <br><br>
         <label>
@@ -49,9 +50,17 @@
 
         <br><br>
         <input type="submit">
+        <input data-reset-button type="reset">
+        <!-- <button type="reset">Launch it</button> -->
+        <!-- any button inside the form tags without a type will submit the form -->
+        <!-- <button> don't launch it </button> -->
 
     </form>
 
+    <button data-load-orders>Load Orders!</button>
+    <section class="Orders"data-order-area>
+        <!-- <p></p> -->
+    </section>
 
     <script src="scripts/index.js"></script>
 </body>
